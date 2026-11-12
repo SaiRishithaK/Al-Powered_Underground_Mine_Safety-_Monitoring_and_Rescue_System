@@ -1,0 +1,1578 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-12T14:19:27.007149+00:00",
+  "simulation_only": true,
+  "safety_notice": "Sensor readings are simulated, and person detections do not verify survival. This output is for demonstration only, not for operational mine-safety decisions.",
+  "source_video": "mine_worker_sample.mp4",
+  "annotated_video": "person_detection_output.mp4",
+  "sensor_scenario": "hazard-demo",
+  "summary": {
+    "frames_processed": 61,
+    "frames_with_person_detections": 61,
+    "person_detections": 61,
+    "sensor_samples": 5,
+    "survivor_events": 61,
+    "hazard_events": 3,
+    "highest_person_confidence": 0.9345
+  },
+  "sensor_thresholds": {
+    "methane": {
+      "warning": 1.0,
+      "critical": 1.5,
+      "unit": "% vol (demo)"
+    },
+    "carbon_monoxide": {
+      "warning": 50.0,
+      "critical": 100.0,
+      "unit": "ppm"
+    },
+    "temperature": {
+      "warning": 35.0,
+      "critical": 40.0,
+      "unit": "\u00b0C"
+    }
+  },
+  "sensor_readings": [
+    {
+      "timestamp_seconds": 0.0,
+      "methane": 0.248,
+      "carbon_monoxide": 4.72,
+      "temperature": 24.83
+    },
+    {
+      "timestamp_seconds": 1.0,
+      "methane": 0.31,
+      "carbon_monoxide": 2.24,
+      "temperature": 24.75
+    },
+    {
+      "timestamp_seconds": 2.0,
+      "methane": 1.2,
+      "carbon_monoxide": 60.0,
+      "temperature": 36.0
+    },
+    {
+      "timestamp_seconds": 3.0,
+      "methane": 0.159,
+      "carbon_monoxide": 0.0,
+      "temperature": 24.9
+    },
+    {
+      "timestamp_seconds": 4.0,
+      "methane": 0.166,
+      "carbon_monoxide": 0.0,
+      "temperature": 24.99
+    }
+  ],
+  "events": [
+    {
+      "event_id": "event-000001",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 0.0,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.865,
+            "bbox_xyxy": [
+              146.93,
+              100.28,
+              243.29,
+              418.84
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000002",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 0.067,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8553,
+            "bbox_xyxy": [
+              157.21,
+              97.99,
+              295.18,
+              415.74
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000003",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 0.133,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9244,
+            "bbox_xyxy": [
+              162.94,
+              105.88,
+              329.6,
+              417.66
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000004",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 0.2,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9052,
+            "bbox_xyxy": [
+              170.85,
+              107.3,
+              341.44,
+              418.22
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000005",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 0.267,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9215,
+            "bbox_xyxy": [
+              181.39,
+              107.54,
+              360.94,
+              417.85
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000006",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 0.333,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9288,
+            "bbox_xyxy": [
+              190.51,
+              108.05,
+              372.78,
+              417.57
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000007",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 0.4,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8708,
+            "bbox_xyxy": [
+              208.54,
+              106.4,
+              365.85,
+              411.48
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000008",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 0.467,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9154,
+            "bbox_xyxy": [
+              209.65,
+              105.63,
+              360.98,
+              407.83
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000009",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 0.533,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8979,
+            "bbox_xyxy": [
+              222.86,
+              104.69,
+              375.41,
+              407.12
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000010",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 0.6,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9071,
+            "bbox_xyxy": [
+              240.3,
+              102.04,
+              373.57,
+              406.93
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000011",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 0.667,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9246,
+            "bbox_xyxy": [
+              253.21,
+              101.49,
+              375.92,
+              406.36
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000012",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 0.733,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9011,
+            "bbox_xyxy": [
+              261.96,
+              101.71,
+              378.99,
+              405.91
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000013",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 0.8,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9033,
+            "bbox_xyxy": [
+              267.92,
+              99.42,
+              386.61,
+              405.72
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000014",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 0.867,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8098,
+            "bbox_xyxy": [
+              313.78,
+              97.65,
+              399.0,
+              406.23
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000015",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 0.933,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9052,
+            "bbox_xyxy": [
+              310.08,
+              92.08,
+              442.49,
+              405.3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000016",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 1.0,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9118,
+            "bbox_xyxy": [
+              317.26,
+              92.94,
+              441.84,
+              402.65
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000017",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 1.067,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8353,
+            "bbox_xyxy": [
+              325.7,
+              91.86,
+              422.13,
+              402.78
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000018",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 1.133,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8654,
+            "bbox_xyxy": [
+              323.77,
+              91.96,
+              423.95,
+              402.6
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000019",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 1.2,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.872,
+            "bbox_xyxy": [
+              326.88,
+              90.64,
+              462.25,
+              408.46
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000020",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 1.267,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9235,
+            "bbox_xyxy": [
+              326.04,
+              92.45,
+              482.61,
+              401.02
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000021",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 1.333,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8896,
+            "bbox_xyxy": [
+              330.11,
+              90.67,
+              483.11,
+              409.61
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000022",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 1.4,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.7966,
+            "bbox_xyxy": [
+              150.76,
+              103.09,
+              242.23,
+              418.79
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000023",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 1.467,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8771,
+            "bbox_xyxy": [
+              148.5,
+              102.86,
+              249.59,
+              418.79
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000024",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 1.533,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.893,
+            "bbox_xyxy": [
+              158.35,
+              104.85,
+              307.28,
+              417.76
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000025",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 1.6,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9301,
+            "bbox_xyxy": [
+              163.79,
+              106.19,
+              334.74,
+              417.57
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000026",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 1.667,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9102,
+            "bbox_xyxy": [
+              176.3,
+              107.04,
+              352.83,
+              417.65
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000027",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 1.733,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9345,
+            "bbox_xyxy": [
+              187.04,
+              108.08,
+              367.36,
+              417.07
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000028",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 1.8,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9174,
+            "bbox_xyxy": [
+              197.03,
+              108.61,
+              369.66,
+              414.44
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000029",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 1.867,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9006,
+            "bbox_xyxy": [
+              210.64,
+              106.18,
+              361.19,
+              409.7
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000030",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 1.933,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9063,
+            "bbox_xyxy": [
+              211.16,
+              105.92,
+              377.68,
+              407.16
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000031",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 2.0,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8954,
+            "bbox_xyxy": [
+              228.75,
+              103.05,
+              379.97,
+              407.23
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000032",
+      "event_type": "hazard_detected",
+      "timestamp_seconds": 2.0,
+      "source": "simulated_sensor",
+      "severity": "warning",
+      "message": "Simulated methane reading crossed its warning threshold.",
+      "data": {
+        "sensor": "methane",
+        "value": 1.2,
+        "unit": "% vol (demo)",
+        "severity": "warning",
+        "threshold": 1.0
+      }
+    },
+    {
+      "event_id": "event-000033",
+      "event_type": "hazard_detected",
+      "timestamp_seconds": 2.0,
+      "source": "simulated_sensor",
+      "severity": "warning",
+      "message": "Simulated carbon_monoxide reading crossed its warning threshold.",
+      "data": {
+        "sensor": "carbon_monoxide",
+        "value": 60.0,
+        "unit": "ppm",
+        "severity": "warning",
+        "threshold": 50.0
+      }
+    },
+    {
+      "event_id": "event-000034",
+      "event_type": "hazard_detected",
+      "timestamp_seconds": 2.0,
+      "source": "simulated_sensor",
+      "severity": "warning",
+      "message": "Simulated temperature reading crossed its warning threshold.",
+      "data": {
+        "sensor": "temperature",
+        "value": 36.0,
+        "unit": "\u00b0C",
+        "severity": "warning",
+        "threshold": 35.0
+      }
+    },
+    {
+      "event_id": "event-000035",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 2.067,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8992,
+            "bbox_xyxy": [
+              246.68,
+              101.66,
+              378.03,
+              406.34
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000036",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 2.133,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9168,
+            "bbox_xyxy": [
+              256.58,
+              101.07,
+              376.32,
+              406.1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000037",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 2.2,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8906,
+            "bbox_xyxy": [
+              263.4,
+              100.11,
+              379.88,
+              406.05
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000038",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 2.267,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8962,
+            "bbox_xyxy": [
+              270.96,
+              98.78,
+              391.66,
+              405.71
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000039",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 2.333,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8559,
+            "bbox_xyxy": [
+              312.29,
+              94.63,
+              427.64,
+              407.13
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000040",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 2.4,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9177,
+            "bbox_xyxy": [
+              308.74,
+              90.46,
+              446.27,
+              404.51
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000041",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 2.467,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9176,
+            "bbox_xyxy": [
+              317.75,
+              92.19,
+              433.34,
+              403.34
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000042",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 2.533,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8518,
+            "bbox_xyxy": [
+              322.36,
+              91.43,
+              420.49,
+              402.96
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000043",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 2.6,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8775,
+            "bbox_xyxy": [
+              325.85,
+              90.55,
+              429.58,
+              401.5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000044",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 2.667,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9181,
+            "bbox_xyxy": [
+              325.02,
+              90.23,
+              466.44,
+              404.63
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000045",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 2.733,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9189,
+            "bbox_xyxy": [
+              324.56,
+              90.52,
+              483.01,
+              403.14
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000046",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 2.8,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.288,
+            "bbox_xyxy": [
+              329.64,
+              94.86,
+              479.35,
+              409.32
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000047",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 2.867,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8636,
+            "bbox_xyxy": [
+              143.73,
+              100.76,
+              243.35,
+              420.25
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000048",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 2.933,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8328,
+            "bbox_xyxy": [
+              152.08,
+              100.59,
+              270.65,
+              417.97
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000049",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 3.0,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9083,
+            "bbox_xyxy": [
+              161.11,
+              105.5,
+              316.95,
+              418.06
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000050",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 3.067,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.919,
+            "bbox_xyxy": [
+              167.85,
+              106.69,
+              341.79,
+              417.33
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000051",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 3.133,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9221,
+            "bbox_xyxy": [
+              179.68,
+              107.25,
+              358.55,
+              417.98
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000052",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 3.2,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9319,
+            "bbox_xyxy": [
+              190.08,
+              107.94,
+              373.72,
+              417.05
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000053",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 3.267,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9018,
+            "bbox_xyxy": [
+              200.46,
+              107.77,
+              367.92,
+              412.69
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000054",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 3.333,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9118,
+            "bbox_xyxy": [
+              208.37,
+              105.98,
+              360.77,
+              408.76
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000055",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 3.4,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.905,
+            "bbox_xyxy": [
+              220.07,
+              104.75,
+              368.56,
+              407.04
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000056",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 3.467,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9016,
+            "bbox_xyxy": [
+              237.48,
+              102.61,
+              371.39,
+              407.18
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000057",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 3.533,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9176,
+            "bbox_xyxy": [
+              251.69,
+              101.69,
+              376.33,
+              406.42
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000058",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 3.6,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9089,
+            "bbox_xyxy": [
+              260.65,
+              101.45,
+              377.38,
+              405.84
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000059",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 3.667,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8873,
+            "bbox_xyxy": [
+              266.89,
+              99.54,
+              384.31,
+              406.07
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000060",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 3.733,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8524,
+            "bbox_xyxy": [
+              283.99,
+              98.89,
+              396.19,
+              406.69
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000061",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 3.8,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8911,
+            "bbox_xyxy": [
+              311.52,
+              92.88,
+              441.49,
+              405.64
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000062",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 3.867,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.9067,
+            "bbox_xyxy": [
+              313.3,
+              92.45,
+              444.93,
+              404.11
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000063",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 3.933,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.843,
+            "bbox_xyxy": [
+              320.22,
+              91.17,
+              430.37,
+              403.57
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "event-000064",
+      "event_type": "survivor_detected",
+      "timestamp_seconds": 4.0,
+      "source": "camera",
+      "severity": "info",
+      "message": "A person was detected in the video; this does not confirm survivor status.",
+      "data": {
+        "subject_type": "potential_survivor",
+        "status": "visual person detection; survival and condition unverified",
+        "detections": [
+          {
+            "class": "person",
+            "confidence": 0.8728,
+            "bbox_xyxy": [
+              324.07,
+              91.72,
+              421.6,
+              402.72
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
